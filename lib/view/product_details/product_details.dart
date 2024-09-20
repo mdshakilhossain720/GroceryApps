@@ -1,6 +1,7 @@
 import 'package:counter_button/counter_button.dart';
 import 'package:flutter/material.dart';
 import 'package:groceryproject/view/utility/image_path.dart';
+import 'package:groceryproject/view/utility/text_style.dart';
 
 class ProductDetails extends StatefulWidget {
   const ProductDetails({super.key});
@@ -65,45 +66,51 @@ class _ProductDetailsState extends State<ProductDetails> {
                       children: [
                         Text(
                           "Naturel Red Apple",
-                          style: TextStyle(
-                            fontSize: 24,
-                            color: Color(0xff181725),
-                          ),
+                          style: TTextStyle. productDetaiHead,
                         ),
                         Image.asset("assets/logo/love.png"),
                       ],
                     ),
                     Text(
                       "1kg, Price",
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                        color: Color(0xff7C7C7C),
-                      ),
+                      style:TTextStyle.productDetaiPrices,
                     ),
+                    SizedBox(height: 24,),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        CounterButton(
-                          loading: false,
-                          onChange: (int val) {
-                            setState(() {
-                              //  _counterValue = val;
-                            });
-                          },
-                          count: _counterValue,
-                          countColor: Colors.black,
-                          buttonColor: Colors.green,
-                          //  border: Border.all(color: Colors.transparent, width: 0),
-                          //progressColor: Colors.purpleAccent,
+                        Container(
+                          alignment: Alignment.center,
+                          height: 45,
+                          width: 45,
+                          decoration: BoxDecoration(
+
+                            border: Border.all(
+                              color: Color(0xffF0F0F0),
+                            ),
+                            borderRadius: BorderRadius.circular(17),
+                          ),
+                          child: Icon(Icons.minimize,color: Color(0xffB3B3B3),size: 30,),
                         ),
+                        SizedBox(width: 9,),
+                        Text("1",style: TTextStyle. cartOne),SizedBox(width: 10,),
+                        Container(
+                          alignment: Alignment.center,
+                          height: 45,
+                          width: 45,
+                          decoration: BoxDecoration(
+
+                            border: Border.all(
+                              color: Color(0xffF0F0F0),
+                            ),
+                            borderRadius: BorderRadius.circular(17),
+                          ),
+                          child: Icon(Icons.add,color: Color(0xff53B175),size: 30,),
+                        ),
+                        Spacer(),
                         Text(
                           "\$4.99",
-                          style: TextStyle(
-                            fontSize: 24,
-                            letterSpacing: 0.1,
-                            color: Color(0xff181725),
-                          ),
+                          style: TTextStyle.Prices,
                         ),
                       ],
                     ),
@@ -121,11 +128,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                           children: [
                             Text(
                               "Product Detail",
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w600,
-                                color: Color(0xff181725),
-                              ),
+                              style: TTextStyle.prouctText,
                             ),
                             Image.asset("assets/logo/arrow.png"),
                           ],
@@ -135,10 +138,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                         ),
                         Text(
                           """Apples are nutritious. Apples may be good for weight loss. apples may be good for your heart. As part of a healtful and varied diet.""",
-                          style: TextStyle(
-                            fontSize: 13,
-                            color: Color(0xff7C7C7C),
-                          ),
+                          style: TTextStyle.prouctTextDetailsText,
                         )
                       ],
                     ),
@@ -154,8 +154,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                       children: [
                         Text(
                           "Nutritions",
-                          style:
-                              TextStyle(fontSize: 18, color: Color(0xff181725)),
+                          style:TTextStyle.prouctText,
                         ),
                         Wrap(
                           alignment: WrapAlignment.center,
@@ -170,10 +169,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                               ),
                               child: Text(
                                 "100gr",
-                                style: TextStyle(
-                                  fontSize: 9,
-                                  color: Color(0xff7C7C7C),
-                                ),
+                                style:TTextStyle.nuturatuiGr,
                               ),
                             ),
                             IconButton(
@@ -195,8 +191,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                       children: [
                         Text(
                           "Review",
-                          style:
-                          TextStyle(fontSize: 18, color: Color(0xff181725)),
+                          style:TTextStyle.prouctText
                         ),
                         Wrap(
                           alignment: WrapAlignment.center,

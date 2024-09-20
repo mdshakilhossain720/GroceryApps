@@ -131,7 +131,58 @@ static TextStyle loginText=TextStyle(
     color: Color(0xff53B175),
   );
 
+static TextStyle cartApp= TextStyle(
+  fontSize: 20,
+  color: Color(0xff181725),
+  fontFamily: 'Gilroy',
+);
+static TextStyle cartText= TextStyle(
+      fontSize: 16,
+      fontFamily: 'Gilroy',
+      color: Color(0xff181725)
+  );static TextStyle cartTextSmall= TextStyle(
+    fontSize: 14,
+    color: Color(0xff7C7C7C),
+    fontFamily: 'Gilroy',
+    fontWeight: FontWeight.w500,
+  );static TextStyle productDetaiHead= TextStyle(
+    fontSize: 24,
+    color: Color(0xff181725),
+    fontFamily: 'Gilroy',
+  );static TextStyle productDetaiPrices= TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    color: Color(0xff7C7C7C),
+    fontFamily: 'Gilroy',
+  );static TextStyle Prices=TextStyle(
+    fontSize: 24,
+    fontFamily: 'Gilroy',
+    letterSpacing: 0.1,
+    color: Color(0xff181725),
+  );static TextStyle prouctText=TextStyle(
 
+    fontSize: 16,
+
+    fontFamily: 'Gilroy',
+    fontWeight: FontWeight.w600,
+    color: Color(0xff181725),
+  );static TextStyle prouctTextDetailsText=TextStyle(
+    fontSize: 13,
+    color: Color(0xff7C7C7C),
+    fontFamily: 'Gilroy',
+    fontWeight: FontWeight.w500,
+  );
+static TextStyle nuturatuiGr = TextStyle(
+  fontSize: 9,
+  fontFamily: 'Gilroy',
+
+  color: Color(0xff7C7C7C),
+);
+static TextStyle cartOne = TextStyle(
+  fontSize: 16,
+  fontFamily: 'Gilroy',
+  fontWeight: FontWeight.w600,
+);
 
 
 
