@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:groceryproject/view/homepage/home_page.dart';
 import 'package:groceryproject/view/utility/color.dart';
 
+import '../Cart/cart_page.dart';
 import '../expolersearch/expoler_search.dart';
 import '../favourtpage/favourt_page.dart';
 import '../state_holder/bottom_nav_bar_controller.dart';
@@ -24,7 +25,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   List<Widget>screen=[
     HomePage(),
     ExpolerSearch(),
-    Container(),
+    CartPage(),
     FavourtPage(),
    // Container(),
 

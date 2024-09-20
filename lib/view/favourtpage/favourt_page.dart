@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:groceryproject/view/utility/text_style.dart';
 
 import '../components/button_resuable.dart';
 
@@ -37,23 +38,16 @@ class FavourtPage extends StatelessWidget {
                         SizedBox(width: 20,),
                         Column(
                           children: [
-                            Text("Sprite Can",style: TextStyle(
-                              fontSize: 16,
-                              color: Color(0xff181725),
-                            ),),
-                            Text("325ml, Price",style: TextStyle(
-                              fontSize: 14,
-                              color: Color(0xff7C7C7C),
-                            ),),
+                            Text("Sprite Can",style: TTextStyle.favourBolText),
+                            Text("325ml, Price",style: TTextStyle.favourt),
 
                           ],
                         ),
                         Spacer(),
-                        Text("\$1.50",style: TextStyle(
-                          fontSize: 16,
-                          color: Color(0xff181725),
-                        ),),
-                        Image.asset("assets/logo/arrow.png",height: 14,),
+                        Text("\$1.50",style:TTextStyle.favourPrices),
+                        SizedBox(width: 4,),
+                        Icon(Icons.arrow_forward_ios,size: 14,color: Color(0xff181725),),
+                        //Image.asset("assets/logo/arrow.png",height: 14,),
                       ],
                     );
 

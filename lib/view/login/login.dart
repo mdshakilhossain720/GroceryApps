@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:groceryproject/view/BottomNavBar/bottom_navbar.dart';
 import 'package:groceryproject/view/signup/sign_up.dart';
 import 'package:groceryproject/view/utility/image_path.dart';
+import 'package:groceryproject/view/utility/text_style.dart';
 
 import '../components/button_resuable.dart';
 import '../number_page/number_page.dart';
@@ -22,22 +23,10 @@ class LoginPage extends StatelessWidget {
               children: [
                 Center(child: Image.asset(ImagePath.appLogo,height: 55,width: 47,)),
                 SizedBox(height: 90),
-                Text("Sign Up",style: TextStyle(
-                  fontSize: 26,
-                  fontWeight: FontWeight.w600,
-                  color: Color(0xff030303),
-            
-                ),),
-                Text("Enter your emails and password",style: TextStyle(
-                  fontSize: 16,
-                  color: Color(0xff7C7C7C),
-                ),),
+                Text("Sign Up",style: TTextStyle.loginText),
+                Text("Enter your emails and password",style: TTextStyle. loginSubTitle),
                 SizedBox(height: 15,),
-                Text("Email",style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w600,
-                  color: Color(0xff7C7C7C),
-                ),),
+                Text("Email",style: TTextStyle.loginEmail),
                 TextFormField(
                   decoration: InputDecoration(
                     hintText: 'imshuvo97@gmail.com',
@@ -50,11 +39,7 @@ class LoginPage extends StatelessWidget {
             
                 ),
                 SizedBox(height: 12,),
-                Text("Password",style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w600,
-                  color: Color(0xff7C7C7C),
-                ),),
+                Text("Password",style:TTextStyle.loginEmail),
                 TextFormField(
                   obscureText: true,
                   decoration: InputDecoration(
@@ -72,10 +57,7 @@ class LoginPage extends StatelessWidget {
                   alignment: Alignment.centerRight,
                   child: TextButton(onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (_)=>NumberPage()));
-                  }, child:Text("Forgot Password?",style: TextStyle(
-                    fontSize: 14,
-                    color: Color(0xff181725),
-                  ),)),
+                  }, child:Text("Forgot Password?",style:TTextStyle.loginPassworForget )),
                 ),
                 SizedBox(height: 14,),
                 ButtonResuable(title: 'Log In', ontab: () {
@@ -91,16 +73,13 @@ class LoginPage extends StatelessWidget {
                     child: RichText(
                       text: TextSpan(
                         text: 'Don’t have an account? ',
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w600,
-                          color: Color(0xff181725),
-
-                        ),
+                        style: TTextStyle. loginsing,
                         children: const <TextSpan>[
 
                           TextSpan(text: 'Singup', style: TextStyle(
                             fontSize: 14,
+                            fontFamily: 'Gilroy',
+
                             fontWeight:FontWeight.w600,
                             color: Color(0xff53B175),
                           )),

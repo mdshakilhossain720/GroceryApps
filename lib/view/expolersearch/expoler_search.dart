@@ -1,8 +1,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:groceryproject/view/utility/image_path.dart';
+import 'package:groceryproject/view/utility/text_style.dart';
 
 import '../Beverages/beverages_screen.dart';
+import '../expole_search_page/expoler_search_page.dart';
 
 class ExpolerSearch extends StatelessWidget {
   const ExpolerSearch({super.key});
@@ -16,40 +18,55 @@ class ExpolerSearch extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-            
-
-                   Container(
-                    height: 51,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      color: Color(0xffF2F3F2),
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: TextFormField(
-                      decoration: InputDecoration(
-                        prefixIcon: Icon(Icons.search),
-                        contentPadding: EdgeInsets.symmetric(horizontal: 10),
-                        hintText: 'Search Store',
-                        hintStyle: TextStyle(
-                          color: Color(0xff7C7C7C),
-                          fontSize: 14,
-                          fontWeight: FontWeight.w600,
-                        ),
-                        border: OutlineInputBorder(
-                          borderSide: BorderSide.none,
-                        )
-                      ),
-                    ),
-                  ),
-
                 Center(
-                  child: Text("Find Products",style: TextStyle(
-                    fontSize: 20,
-                    color: Color(0xff181725),
-                  ),),
+                  child: InkWell(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (_)=>ExpolerSearchPage()));
+                    },
+
+                    child: Text("Find Products",style: TextStyle(
+                      fontSize: 20,
+                      fontFamily: 'Gilroy',
+                      color: Color(0xff181725),
+                    ),),
+                  ),
                 ),
                 SizedBox(height: 20,),
-                SizedBox(height: 15,),
+            
+
+                   InkWell(
+                     onTap: (){
+                       Navigator.push(context, MaterialPageRoute(builder: (_)=>ExpolerSearchPage()));
+                     },
+                     child: Container(
+                      height: 51,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Color(0xffF2F3F2),
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      child: TextFormField(
+                        keyboardType: TextInputType.none,
+
+                        decoration: InputDecoration(
+                          prefixIcon: Icon(Icons.search),
+                          contentPadding: EdgeInsets.symmetric(horizontal: 10),
+                          hintText: 'Search Store',
+                          hintStyle: TextStyle(
+                            color: Color(0xff7C7C7C),
+                            fontSize: 14,
+                            fontWeight: FontWeight.w600,
+                          ),
+                          border: OutlineInputBorder(
+                            borderSide: BorderSide.none,
+                          )
+                        ),
+                      ),
+                                       ),
+                   ),
+
+
+                SizedBox(height: 16,),
             
                 GridView.count(
                   shrinkWrap: true,
@@ -87,10 +104,7 @@ class ExpolerSearch extends StatelessWidget {
                             SizedBox(height: 6,),
                             Text("Frash Fruits & Vegetable",
                               textAlign: TextAlign.center,
-                              style: TextStyle(
-                              fontSize: 16,
-                              color: Color(0xff181725),
-                            ),)
+                              style: TTextStyle.searchText)
                           ],
                         )
                       ),
@@ -117,10 +131,7 @@ class ExpolerSearch extends StatelessWidget {
                             SizedBox(height: 6,),
                             Text("Frash Fruits & Vegetable",
                               textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 16,
-                                color: Color(0xff181725),
-                              ),)
+                              style:TTextStyle.searchText)
                           ],
                         )
                     ),
@@ -146,10 +157,7 @@ class ExpolerSearch extends StatelessWidget {
                             SizedBox(height: 6,),
                             Text("Frash Fruits & Vegetable",
                               textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 16,
-                                color: Color(0xff181725),
-                              ),)
+                              style: TTextStyle.searchText)
                           ],
                         )
                     ),
@@ -175,10 +183,7 @@ class ExpolerSearch extends StatelessWidget {
                             SizedBox(height: 6,),
                             Text("Frash Fruits & Vegetable",
                               textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 16,
-                                color: Color(0xff181725),
-                              ),)
+                              style: TTextStyle.searchText)
                           ],
                         )
                     ),
@@ -204,10 +209,7 @@ class ExpolerSearch extends StatelessWidget {
                             SizedBox(height: 6,),
                             Text("Frash Fruits & Vegetable",
                               textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 16,
-                                color: Color(0xff181725),
-                              ),)
+                              style: TTextStyle.searchText)
                           ],
                         )
                     ),
@@ -233,10 +235,7 @@ class ExpolerSearch extends StatelessWidget {
                             SizedBox(height: 6,),
                             Text("Frash Fruits & Vegetable",
                               textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 16,
-                                color: Color(0xff181725),
-                              ),)
+                              style:TTextStyle.searchText)
                           ],
                         )
                     ),

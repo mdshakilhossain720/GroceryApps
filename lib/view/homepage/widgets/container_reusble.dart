@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:groceryproject/view/utility/text_style.dart';
 
 import '../../utility/image_path.dart';
 
@@ -41,17 +42,9 @@ class ContainerResuable extends StatelessWidget {
           children: [
             Center(child: Image.asset(ImagePath.apply,height:62,width: 104,)),
             SizedBox(height: 17,),
-            Text("Red Apple",style: TextStyle(
-              fontSize: 16,
-              color: Color(0xff181725),
-              letterSpacing: 0.1,
-            ),),
+            Text("Red Apple",style: TTextStyle.boldText),
 
-            Text("1kg, Priceg",style: TextStyle(
-              fontSize: 14,
-              color: Color(0xff7C7C7C),
-
-            ),),
+            Text("1kg, Priceg",style: TTextStyle.smallText),
             SizedBox(height: 17,),
             //Spacer(),
             Row(
