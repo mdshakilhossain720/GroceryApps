@@ -67,12 +67,7 @@ class _CartPageState extends State<CartPage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Go to Checkout",style: TextStyle(
-              fontSize: 18,
-              fontFamily: 'Gilroy',
-              fontWeight: FontWeight.w600,
-              color: Color(0xffFCFCFC),
-            ),),
+            Text("Go to Checkout",style: TTextStyle.cheek),
             SizedBox(width: 40,),
             Container(
               alignment: Alignment.center,
@@ -82,12 +77,7 @@ class _CartPageState extends State<CartPage> {
                 color: Color(0xff489E67),
                 borderRadius: BorderRadius.circular(4),
               ),
-              child: Text("\$12.96",style: TextStyle(
-                fontSize: 12,
-                fontWeight: FontWeight.w600,
-                fontFamily: 'Gilroy',
-                color: Color(0xffFCFCFC),
-              ),),
+              child: Text("\$12.96",style:TTextStyle.che),
             )
           ],
         ),

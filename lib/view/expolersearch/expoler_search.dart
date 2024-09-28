@@ -24,11 +24,7 @@ class ExpolerSearch extends StatelessWidget {
                       Navigator.push(context, MaterialPageRoute(builder: (_)=>ExpolerSearchPage()));
                     },
 
-                    child: Text("Find Products",style: TextStyle(
-                      fontSize: 20,
-                      fontFamily: 'Gilroy',
-                      color: Color(0xff181725),
-                    ),),
+                    child: Text("Find Products",style: TTextStyle.findProduct),
                   ),
                 ),
                 SizedBox(height: 20,),
@@ -100,7 +96,7 @@ class ExpolerSearch extends StatelessWidget {
                         child:Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image.asset("assets/image/ba.png",height: 74,width: 111,),
+                            Image.asset(ImagePath.ba,height: 74,width: 111,),
                             SizedBox(height: 6,),
                             Text("Frash Fruits & Vegetable",
                               textAlign: TextAlign.center,
@@ -127,7 +123,7 @@ class ExpolerSearch extends StatelessWidget {
                         child:Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image.asset("assets/image/ba.png",height: 74,width: 111,),
+                            Image.asset(ImagePath.ba,height: 74,width: 111,),
                             SizedBox(height: 6,),
                             Text("Frash Fruits & Vegetable",
                               textAlign: TextAlign.center,
@@ -153,7 +149,7 @@ class ExpolerSearch extends StatelessWidget {
                         child:Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image.asset("assets/image/ba.png",height: 74,width: 111,),
+                            Image.asset(ImagePath.ba,height: 74,width: 111,),
                             SizedBox(height: 6,),
                             Text("Frash Fruits & Vegetable",
                               textAlign: TextAlign.center,
@@ -179,7 +175,7 @@ class ExpolerSearch extends StatelessWidget {
                         child:Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image.asset("assets/image/ba.png",height: 74,width: 111,),
+                            Image.asset(ImagePath.ba,height: 74,width: 111,),
                             SizedBox(height: 6,),
                             Text("Frash Fruits & Vegetable",
                               textAlign: TextAlign.center,
@@ -205,7 +201,7 @@ class ExpolerSearch extends StatelessWidget {
                         child:Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image.asset("assets/image/ba.png",height: 74,width: 111,),
+                            Image.asset(ImagePath.ba,height: 74,width: 111,),
                             SizedBox(height: 6,),
                             Text("Frash Fruits & Vegetable",
                               textAlign: TextAlign.center,
@@ -231,7 +227,7 @@ class ExpolerSearch extends StatelessWidget {
                         child:Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image.asset("assets/image/ba.png",height: 74,width: 111,),
+                            Image.asset(ImagePath.ba,height: 74,width: 111,),
                             SizedBox(height: 6,),
                             Text("Frash Fruits & Vegetable",
                               textAlign: TextAlign.center,

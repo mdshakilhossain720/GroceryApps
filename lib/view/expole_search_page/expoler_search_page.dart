@@ -39,12 +39,7 @@ class ExpolerSearchPage extends StatelessWidget {
                             prefixIcon: Icon(Icons.search),
                             contentPadding: EdgeInsets.symmetric(horizontal: 10),
                             hintText: 'Egg',
-                            hintStyle: TextStyle(
-                              color: Color(0xff7C7C7C),
-                              fontSize: 14,
-                              fontFamily: 'Gilroy',
-                              fontWeight: FontWeight.w600,
-                            ),
+                            hintStyle: TTextStyle.egg,
                             border: OutlineInputBorder(
                               borderSide: BorderSide.none,
                             )),

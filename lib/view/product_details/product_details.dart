@@ -41,7 +41,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                               icon: Icon(Icons.arrow_back_ios)),
                           IconButton(
                               onPressed: () {},
-                              icon: Image.asset("assets/logo/logout.png"))
+                              icon: Image.asset(ImagePath.logout))
                         ],
                       ),
                     ),
@@ -130,7 +130,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                               "Product Detail",
                               style: TTextStyle.prouctText,
                             ),
-                            Image.asset("assets/logo/arrow.png"),
+                            Image.asset(ImagePath.arrow),
                           ],
                         ),
                         SizedBox(
@@ -221,11 +221,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                         color: Color(0xff53B175),
                         borderRadius: BorderRadius.circular(19),
                       ),
-                      child: Text("Add To Basket",style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                        color: Color(0xffFFF9FF)
-                      ),),
+                      child: Text("Add To Basket",style:TTextStyle.basket),
                     )
 
                   ],

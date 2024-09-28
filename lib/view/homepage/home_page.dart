@@ -42,11 +42,7 @@ class _HomePageState extends State<HomePage> {
                           Navigator.push(context, MaterialPageRoute(builder: (_)=>LocationPage()));
                         },
                           child: Icon(Icons.location_on)),
-                      Text("Dhaka, Banassre",style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                        color: TColor.black12Color,
-                      ),)
+                      Text("Dhaka, Banassre",style: TTextStyle.homeTextBan),
                     ],
                   ),
                   sizedBoxH(10),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:groceryproject/view/utility/image_path.dart';
 
 import '../homepage/widgets/container_reusble.dart';
 
@@ -30,7 +31,7 @@ class BeveragesScreen extends StatelessWidget {
                     ),
                   ),
                   Image.asset(
-                    "assets/image/appbar.png",
+                    ImagePath.app,
                     height: 17,
                     width: 16,
                   ),

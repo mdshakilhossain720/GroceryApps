@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:groceryproject/view/utility/text_style.dart';
 
 
 class ResendCode extends StatelessWidget {
@@ -17,16 +18,8 @@ class ResendCode extends StatelessWidget {
             children: [
               IconButton(onPressed: (){}, icon:Icon(Icons.arrow_back_ios,size: 18,)),
               SizedBox(height:45,),
-              Text("Enter your 4-digit code",style: TextStyle(
-                fontSize: 26,
-                fontWeight: FontWeight.w600,
-                color: Color(0xff181725),
-              ),),
-              Text("Code",style: TextStyle(
-                fontSize: 16,
-                color: Color(0xff7C7C7C),
-
-              ),),
+              Text("Enter your 4-digit code",style:TTextStyle.resend),
+              Text("Code",style:TTextStyle.resendcode),
               SizedBox(height: 5,),
               TextFormField(
                 keyboardType: TextInputType.number,

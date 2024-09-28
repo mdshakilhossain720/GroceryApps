@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:groceryproject/view/utility/image_path.dart';
+import 'package:groceryproject/view/utility/text_style.dart';
 
 import '../resendcode/resend_cde.dart';
 
@@ -19,11 +20,7 @@ class NumberPage extends StatelessWidget {
             children: [
               IconButton(onPressed: (){}, icon:Icon(Icons.arrow_back_ios,size: 18,)),
               SizedBox(height: 45,),
-              Text("Enter your mobile number",style: TextStyle(
-                fontSize: 26,
-                fontWeight: FontWeight.w600,
-                color: Color(0xff181725),
-              ),),
+              Text("Enter your mobile number",style: TTextStyle.number ),
               Text("Mobile Number",style: TextStyle(
                 fontSize: 16,
                 color: Color(0xff7C7C7C),

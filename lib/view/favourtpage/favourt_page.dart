@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:groceryproject/view/utility/image_path.dart';
 import 'package:groceryproject/view/utility/text_style.dart';
 
 import '../components/button_resuable.dart';
@@ -18,10 +19,7 @@ class FavourtPage extends StatelessWidget {
             child: Column(
               children: [
                 Center(
-                  child: Text("Favorurite",style: TextStyle(
-                    fontSize: 22,
-                    color: Color(0xff181725),
-                  ),),
+                  child: Text("Favorurite",style: TTextStyle.fave),
                 ),
                 SizedBox(height:15,),
                 Divider(),
@@ -34,7 +32,7 @@ class FavourtPage extends StatelessWidget {
                     return Row(
                       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Image.asset("assets/image/speed.png",height: 54,width: 30),
+                        Image.asset(ImagePath.speed,height: 54,width: 30),
                         SizedBox(width: 20,),
                         Column(
                           children: [

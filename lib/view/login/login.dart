@@ -74,15 +74,9 @@ class LoginPage extends StatelessWidget {
                       text: TextSpan(
                         text: 'Don’t have an account? ',
                         style: TTextStyle. loginsing,
-                        children: const <TextSpan>[
+                        children: <TextSpan>[
 
-                          TextSpan(text: 'Singup', style: TextStyle(
-                            fontSize: 14,
-                            fontFamily: 'Gilroy',
-
-                            fontWeight:FontWeight.w600,
-                            color: Color(0xff53B175),
-                          )),
+                          TextSpan(text: 'Singup', style:TTextStyle.llogin),
 
                         ],
                       ),
